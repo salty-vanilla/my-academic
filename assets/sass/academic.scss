@@ -11,7 +11,7 @@
 html {
   font-family: $sta-font-body, sans-serif;
   font-size: #{$sta-font-size-small}px;
-  color: rgba(0,0,0,0.8);
+  color: #333;
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
@@ -886,6 +886,29 @@ ul.share li:hover i {
 article {
   animation: intro 0.3s both;
   animation-delay: 0.15s;
+  font-size: 16px;
+}
+
+.article h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #555555;
+}
+.article h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin-top: 40px;
+
+  border-bottom: solid;
+  border-color: #ddd;
+  border-width: 1px;
+  color: #555555;
+}
+.article h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #555555;
 }
 
 .article-container {
@@ -1343,7 +1366,8 @@ article .article-metadata {
 
 .project-card {
   position: relative;
-  width: calc(33.3% - 2*20px); /* Fluid 3 columns (inc. 20px gutter) */
+  // width: calc(33.3% - 2*20px); /* Fluid 3 columns (inc. 20px gutter) */
+  width: calc(50.0% - 2*20px); /* Fluid 2 columns (inc. 20px gutter) */
 }
 @media screen and (max-width: 1199px) {
   .project-card {
